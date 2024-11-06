@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mental_health_tracker/screens/menu.dart';
 import 'package:mental_health_tracker/screens/moodentry_form.dart';
-// TODO: Impor halaman MoodEntryFormPage jika sudah dibuat
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -12,7 +11,7 @@ class LeftDrawer extends StatelessWidget {
       child: ListView(
         children: [
           DrawerHeader(
-            // TODO: Bagian drawer header
+            //Bagian drawer header
             decoration: BoxDecoration(
               color: Theme.of(context).colorScheme.primary,
             ),
@@ -30,19 +29,24 @@ class LeftDrawer extends StatelessWidget {
                 Padding(padding: EdgeInsets.all(8)),
                 Text(
                   "Ayo jaga kesehatan mentalmu setiap hari disini!",
-                  // TODO: Tambahkan gaya teks dengan center alignment, font ukuran 15, warna putih, dan weight biasa
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.white,
+                    fontWeight: FontWeight.normal,
+                  )
                 ),
               ],
             ),
 
           ),
-            // TODO: Bagian routing
+            //Bagian routing
             ListTile(
               leading: const Icon(Icons.home_outlined),
               title: const Text('Halaman Utama'),
               // Bagian redirection ke MyHomePage
               onTap: () {
-                Navigator.pushReplacement(
+                Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => MyHomePage(),
@@ -54,10 +58,6 @@ class LeftDrawer extends StatelessWidget {
               title: const Text('Tambah Mood'),
               // Bagian redirection ke MoodEntryFormPage
               onTap: () {
-                /*
-                TODO: Buatlah routing ke MoodEntryFormPage di sini,
-                setelah halaman MoodEntryFormPage sudah dibuat.
-                */
                 Navigator.push(
                   context,
                   MaterialPageRoute(

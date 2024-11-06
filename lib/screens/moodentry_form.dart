@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// TODO: Impor drawer yang sudah dibuat sebelumnya
+// Impor drawer yang sudah dibuat sebelumnya
 
 class MoodEntryFormPage extends StatefulWidget {
   const MoodEntryFormPage({super.key});
@@ -26,7 +26,7 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
         backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Colors.white,
       ),
-      // TODO: Tambahkan drawer yang sudah dibuat di sini
+      // Tambahkan drawer yang sudah dibuat di sini
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
@@ -127,7 +127,8 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text('Mood: $_mood'),
-                                    // TODO: Munculkan value-value lainnya
+                                    Text("Feeling: $_feelings"),
+                                    Text("Intensity: $_moodIntensity")
                                   ],
                                 ),
                               ),
